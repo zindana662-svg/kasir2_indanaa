@@ -77,8 +77,8 @@ return [
     |
     */
 
-    'logo' => '<b>Admin</b>LTE',
-    'logo_img' => 'vendor/adminlte/dist/assets/img/AdminLTELogo.png',
+    'logo' => 'Kasir',
+    'logo_img' => 'vendor/adminlte/dist/assets/img/logoaw.png',
     'logo_img_class' => 'brand-image opacity-75 shadow',
     'logo_img_xl' => null,
     'logo_img_xl_class' => 'brand-image-xs opacity-75',
@@ -100,7 +100,7 @@ return [
     'auth_logo' => [
         'enabled' => false,
         'img' => [
-            'path' => 'vendor/adminlte/dist/assets/img/AdminLTELogo.png',
+            'path' => 'vendor/adminlte/dist/assets/img/logoaw.png',
             'alt' => 'Auth Logo',
             'class' => '',
             'width' => 50,
@@ -136,7 +136,7 @@ return [
         'enabled' => true,
         'mode' => 'fullscreen',
         'img' => [
-            'path' => 'vendor/adminlte/dist/assets/img/AdminLTELogo.png',
+            'path' => 'vendor/adminlte/dist/assets/img/logoaw.png',
             'alt' => 'AdminLTE Preloader Image',
             'effect' => 'animation__shake',
             'width' => 60,
@@ -790,26 +790,39 @@ return [
             'can' => 'manage-blog',
         ],
         [
-            'text' => 'pages',
+            'text' => 'Jurusan',
             'url' => 'admin/pages',
             'icon' => 'bi bi-file-earmark',
-            'label' => 4,
+            //'label' => 4
             'label_color' => 'success',
         ],
-        ['header' => 'account_settings'],
         [
-            'text' => 'profile',
-            'url' => 'admin/settings',
+            'text' => 'Jenjang',
+            'url' => 'admin/pages',
+            'icon' => 'bi bi-file-earmark',
+            //'label' => 4
+            'label_color' => 'success',
+        ],
+        [
+            'text' => 'Kelas',
+            'url' => 'admin/pages',
+            'icon' => 'bi bi-file-earmark',
+            //'label' => 4
+            'label_color' => 'success',
+        ],
+        [
+            'text' => 'Siswa',
+            'url' => 'admin/pages',
+            'icon' => 'bi bi-file-earmark',
+            //'label' => 4
+            'label_color' => 'success',
+        ],
+
+
+
+        [
+            'text' => 'Data Master',
             'icon' => 'bi bi-person',
-        ],
-        [
-            'text' => 'change_password',
-            'url' => 'admin/settings',
-            'icon' => 'bi bi-lock',
-        ],
-        [
-            'text' => 'multilevel',
-            'icon' => 'bi bi-share',
             'submenu' => [
                 [
                     'text' => 'level_one',
@@ -845,11 +858,10 @@ return [
                 ],
             ],
         ],
-        ['header' => 'labels'],
         [
-            'text' => 'important',
-            'icon_color' => 'danger',
-            'url' => '#',
+            'text' => 'Data Siswa',
+            'icon_color' => 'grey',
+            'route' => 'siswa.index',
         ],
         [
             'text' => 'warning',
