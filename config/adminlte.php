@@ -82,7 +82,7 @@ return [
     'logo_img_class' => 'brand-image opacity-75 shadow',
     'logo_img_xl' => null,
     'logo_img_xl_class' => 'brand-image-xs opacity-75',
-    'logo_img_alt' => 'Admin Logo',
+    'logo_img_alt' => 'alwashliyah',
 
     /*
     |--------------------------------------------------------------------------
@@ -791,7 +791,7 @@ return [
         ],
         [
             'text' => 'Jurusan',
-            'url' => 'admin/pages',
+            'url' => 'jurusan',
             'icon' => 'bi bi-file-earmark',
             //'label' => 4
             'label_color' => 'success',
