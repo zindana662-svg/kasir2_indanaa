@@ -5,6 +5,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\SiswaController;
 use App\Http\Controllers\JurusanController;
 use App\Http\Controllers\JenjangController; 
+use App\Http\Controllers\KelasController;
 
 Route::get('/', function () {
     return view('welcome');
@@ -21,6 +22,7 @@ Route::middleware('auth')->group(function () {
     Route::resource('siswa',SiswaController::class);
     Route::resource('jurusan',JurusanController::class);
     Route::resource('jenjang',JenjangController::class);
+    Route::resource('kelas',KelasController::class);
 
 });
 

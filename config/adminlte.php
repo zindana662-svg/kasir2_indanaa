@@ -805,14 +805,14 @@ return [
         ],
         [
             'text' => 'Kelas',
-            'url' => 'admin/pages',
+            'url' => 'kelas',
             'icon' => 'bi bi-file-earmark',
             //'label' => 4
             'label_color' => 'success',
         ],
         [
             'text' => 'Siswa',
-            'url' => 'admin/pages',
+            'url' => 'siswa',
             'icon' => 'bi bi-file-earmark',
             //'label' => 4
             'label_color' => 'success',

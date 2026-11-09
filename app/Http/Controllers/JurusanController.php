@@ -27,7 +27,7 @@ class JurusanController extends Controller
      */
     public function create()
     {
-        //
+        return view('jurusan.create');
     }
 
     /**
@@ -35,7 +35,18 @@ class JurusanController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $data = $request->validate([
+            'nama_jurusan' => 'required|string|max:255',
+            'kode_jurusan' => 'required|string|max:255|unique:jurusans,kode_jurusan',
+            'keterangan' => 'nullable|string|max:255',
+            'status' => 'required|in:aktif,nonaktif',
+        ]);
+
+        Jurusan::create($data);
+
+        return redirect()
+            ->route('jurusan.index')
+            ->with('success', 'Data jurusan berhasil ditambahkan.');
     }
 
     /**
